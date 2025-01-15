@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website showcasing my work and skills.">
+    <title>Sanjana - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Section -->
+    <header>
+        <div class="navigation">
+            <!-- Logo and Title on the Left -->
+            <div class="logo-container">
+                <a href="#home">
+                    <img src="assets/images/logo-static.png" 
+                         data-gif="assets/images/logo.gif" 
+                         data-static="assets/images/logo-static.png" 
+                         class="logo-img" alt="Animated Logo">
+                </a>
+                <a href="#home" class="site-title">SANJANA</a>
+            </div>
+            
+            <!-- Navigation Buttons on the Right -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="intro">
+            <h1>Hi, I'm Sanjana</h1>
+            <p>A passionate aerospace Engineer</p>
+            <a href="#contact" class="cta">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>Aerospace engineer with expertise in aerodynamics, fluid mechanics, and tools like ANSYS, CATIA, and Python. Known for strong analytical and problem-solving skills and adaptability to excel in cross-functional teams. Passionate about innovation and continuous learning, supported by global academic and project experience.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-list">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="project1-image.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Short description of the project.</p>
+                <a href="https://project-link.com" target="_blank">View Project</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="project2-image.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Short description of the project.</p>
+                <a href="https://project-link.com" target="_blank">View Project</a>
+            </div>
+            <!-- Add more projects here -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="submit-form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2025 [Your Name]. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/yourname" target="_blank">LinkedIn</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
